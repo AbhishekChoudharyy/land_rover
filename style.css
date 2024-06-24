@@ -21,17 +21,46 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  transition: all ease 0.5s;
+ 
+  background-color: rgba(88, 37, 37, 0.158);
 }
+
+#nav:hover {
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
 #nav-btn img {
   height: 15px;
+  filter: invert(1);
 }
+#nav-btn button{
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid red;
+  background-color: transparent;
+  /* border: none; */
+  outline: none;
+}
+
 
 video {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: fixed;
-  z-index: -99;
+  z-index: -10;
+  top: 0;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(88, 37, 37, 0.158);
 }
 
 #page1 {
@@ -48,7 +77,7 @@ video {
   /* background-color: green; */
 }
 #page1 h3::before {
-    content: "Long live fashion.";
+  content: "Long live fashion.";
   position: absolute;
   color: #000;
   top: -4px;
